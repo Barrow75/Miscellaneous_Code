@@ -1,6 +1,3 @@
-# Prompt: Getting text files from the internet uising python
-
-
 import requests
 
 
