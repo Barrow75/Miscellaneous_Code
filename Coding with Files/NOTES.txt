@@ -1,1 +1,20 @@
+--- ENCODING UTF-8
 
+> UTF-8:
+    - Unicode Transformation Format 8 bit
+    - A character encoding standard that uses one to four bytes to represent any Unicode code point, making it the most compatible with ASCII.
+    - How it works:
+          - Code points from 0 to 127 which corresponds to ASCII characters and are represented by using bytes; other characters require two, three, or four bytes
+    - Importance:
+          - Allows for the display of text in various laguages and scripts
+
+  In Coding:
+         ~ With the encoding='utf-8':
+
+          with open("file.txt", 'w', encoding='utf-8') as f:
+          > Ensures the file is written using UTF-8 encoding
+          > Avoids encoding related errors when working with special characters such as emojis, non English text and accents
+          > Ensures compatibility across different operating systems
+          > With the UTF-8 it saves the file correctly so if it is opened in a different editor/ OS then there are no issues
+          >
+          >
