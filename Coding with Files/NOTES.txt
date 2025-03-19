@@ -18,3 +18,34 @@
           > With the UTF-8 it saves the file correctly so if it is opened in a different editor/ OS then there are no issues
           >
           >
+
+
+
+--- Reading From File
+
+> read():
+
+    Read the Entire File as a single string
+    - When to use:
+            - When the file is small
+                    - Avoids memory issues
+            - Load the entire file into a single string.
+                    - If you are analyzing a large document to search for words, counting occurances and moifying text. This works                             faster than looping through lines because it processes it in one go.
+            - Working with structured formats like JSON or XML
+                    - These are often one large structured block rather than seperate lines 
+            - Modifyng text (removing certain words or replacing characters)
+                    - Using string methods such as .replace or .split()
+                        - In Coding:
+                                with open("example.txt", 'r') as file:
+                                    contents_in_file = file.read
+                                replace_contents_in_file = contents_in_file.replace('word you want to replace', 'replaced word')
+
+            - When you want to split the text into custom sections
+                    - This gives you more control if the contents in the file is not formatted line by line
+            - Dealing with paragraphs and not lines
+
+    - When NOT to use:
+            - If you are dealing with files that are too large (1GB+)
+            - When you need one line at a time 
+            - I fprocessing the text line by line making more sense
+
