@@ -24,8 +24,8 @@
 --- Reading From File
 
 > read():
-
     Read the Entire File as a single string
+
     - When to use:
             - When the file is small
                     - Avoids memory issues
@@ -47,5 +47,30 @@
     - When NOT to use:
             - If you are dealing with files that are too large (1GB+)
             - When you need one line at a time 
-            - I fprocessing the text line by line making more sense
+            - If processing the text line by line making more sense
+
+
+> readline()
+    Read One Line At A Time
+
+    - When to use:
+            - You want to process the file line by line
+            - Dont want to load the whole file into memory at one
+                    - This helps with memory issues and will help when dealing with very large files
+
+    - When NOT to use:
+            - When you need to iterate over all lines
+            - You need all lines at once
+
+
+> readlines()
+    Read All Lines As A List
+
+    - When to use:
+            - You need to get all lines as a list
+            - You want to loop over the lines multiple times
+            - Process each line separately but still store them all
+            - Dealing with medium files
+                - 1 MB to 100 MB
+
 
