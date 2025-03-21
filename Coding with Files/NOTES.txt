@@ -72,5 +72,6 @@
             - Process each line separately but still store them all
             - Dealing with medium files
                 - 1 MB to 100 MB
+            - 
 
 
