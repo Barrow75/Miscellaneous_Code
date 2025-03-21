@@ -74,4 +74,20 @@
                 - 1 MB to 100 MB
             - 
 
+--- write() vs writer() ---
+
+
+> write()
+    Built in file method used to write a single striong to a text or binary file
+
+    - When to use:
+            - When you are dealing with raw text such as a text file (.txt) or a log file (.log)
+
+> writer()
+    Part of the CSV module
+    Creates a specil object to write data into a CSV file
+    Handles formatting, quoting and escaping automatically
+
+    - When to use:
+            - When you are writing structured tabular data into a CSV file
 
